@@ -10,6 +10,7 @@ if(empty($_POST['username']) || empty($_POST['password'])){
 else {
 	$username = $mysqli->real_escape_string($_POST['username']);
 	$password = sha1($mysqli->real_escape_string($_POST['password']));
+	$check = $mysqli->query("use testdatabase2");
 	$check = $mysqli->query("SELECT * from accounts WHERE name = '".$username."' AND password = '".$password."'");
 	if($check->num_rows == 1){
 		$account = $check->fetch_assoc();
