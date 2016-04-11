@@ -4,9 +4,9 @@ if(basename($_SERVER["PHP_SELF"]) == "database.php"){
 }
 //SQL Information
 $host['hostname'] = 'localhost'; // Hostname [Usually locahost]
-$host['user'] = 'root'; // Database Username [Usually root]
-$host['password'] = ''; // Database Password [Leave blank if unsure]
-$host['database'] = 'mapleblade'; // Database Name
+$host['user'] = 'testuser2'; // Database Username [Usually root]
+$host['password'] = '12345'; // Database Password [Leave blank if unsure]
+$host['database'] = 'testdatabase2'; // Database Name
 
 //Database Prefix
 $prefix = "bit_";

@@ -95,7 +95,7 @@ if (file_exists('installdone.txt')) {
             error_reporting(0);
             $host = $_POST["host"];
             $db = $_POST["DB"];
-            $dbuser = "testuser2";
+            $dbuser = $_POST["DBuser"];
             $dbpass = $_POST["DBpass"];
             $dbprefix = $_POST["DBprefix"];
             $mysqli = new mysqli("$host", "$dbuser", "$dbpass", "$db");
@@ -143,10 +143,10 @@ $mysqli = new MySQLi($host[\'hostname\'],$host[\'user\'],$host[\'password\'],$ho
             include '../database.php';
             if ($mysqli->query("SHOW TABLES LIKE 'accounts'")->num_rows != 1) {
                 echo "<hr/><div class=\"alert alert-danger\">(1) You need to have a valid game database installed before installing MapleBit!</div><hr/><a href=\"?install=1\" class=\"btn btn-danger btn-lg\" value=\"Continue &raquo;\" style=\"float:right\">&laquo; Go Back</a><br/><br/>";
-                echo $mysqli->error;
-                echo $mysqli->errno;
-                echo $mysqli->error_list;
-                echo $mysqli->connect_error;
+//                echo $mysqli->error;
+//                echo $mysqli->errno;
+//                echo $mysqli->error_list;
+//                echo $mysqli->connect_error;
                 exit();
             }
             if ($mysqli->query("SHOW TABLES LIKE 'characters'")->num_rows != 1) {
