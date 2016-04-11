@@ -1,9 +1,9 @@
 <?php
 //Important Configuration
 $host['hostname'] = '127.0.0.1'; // Host name (Usually localhost or 127.0.0.1)
-$host['user'] = 'root'; // DB Username
-$host['password'] = ''; // DB Password
-$host['database'] = 'moopledev'; // DB Name
+$host['user'] = 'testuser2'; // DB Username
+$host['password'] = '12345'; // DB Password
+$host['database'] = 'testdatabase2'; // DB Name
 
 //Server Information
 $servername = 'MapleSimplicity'; // Server Name
