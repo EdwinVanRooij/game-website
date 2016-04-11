@@ -144,10 +144,12 @@ $mysqli = new MySQLi($host[\'hostname\'],$host[\'user\'],$host[\'password\'],$ho
 			include '../database.php';
     		if($mysqli->query("SHOW TABLES LIKE 'accounts'")->num_rows != 1) {
 				echo "<hr/><div class=\"alert alert-danger\">(1) You need to have a valid game database installed before installing MapleBit!</div><hr/><a href=\"?install=1\" class=\"btn btn-danger btn-lg\" value=\"Continue &raquo;\" style=\"float:right\">&laquo; Go Back</a><br/><br/>";
+				echo "Errormessage: %s\n", $mysqli->error;
 				exit();
     		}
     		if($mysqli->query("SHOW TABLES LIKE 'characters'")->num_rows != 1) {
 				echo "<hr/><div class=\"alert alert-danger\">(2) You need to have a valid game database installed before installing MapleBit!</div><hr/><a href=\"?install=1\" class=\"btn btn-danger btn-lg\" value=\"Continue &raquo;\" style=\"float:right\">&laquo; Go Back</a><br/><br/>";
+				echo "Errormessage: %s\n", $mysqli->error;
 				exit();
     		}
 $queryaccounts = $mysqli->query("SELECT * FROM `accounts`");
