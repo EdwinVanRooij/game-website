@@ -95,7 +95,7 @@ if (file_exists('installdone.txt')) {
             error_reporting(0);
             $host = $_POST["host"];
             $db = $_POST["DB"];
-            $dbuser = $_POST["DBuser"];
+            $dbuser = "testuser2";
             $dbpass = $_POST["DBpass"];
             $dbprefix = $_POST["DBprefix"];
             $mysqli = new mysqli("$host", "$dbuser", "$dbpass", "$db");
