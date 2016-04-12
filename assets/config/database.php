@@ -9,7 +9,7 @@ $host['password'] = '12345'; // Database Password [Leave blank if unsure]
 $host['database'] = 'testdatabase2'; // Database Name
 
 //Database Prefix
-$prefix = "bit_";
+$prefix = "";
 // What is your server`s log in port - Don`t change if you aren`t sure.
 $loginport = "7575";
 // What is your server`s world port - Don`t change if you aren`t sure.
