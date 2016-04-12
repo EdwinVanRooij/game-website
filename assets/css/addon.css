@@ -1,22 +1,33 @@
-.commentbubble{float: right;}
-.text-center,.text-left {margin:0px;}
+.commentbubble {
+    float: right;
+}
+
+.text-center, .text-left {
+    margin: 0px;
+}
+
 .positive_comment {
-	color: #5cb85c;
+    color: #5cb85c;
 }
+
 .negative_comment {
-	color: #d9534f;
+    color: #d9534f;
 }
+
 .neutral_comment {
-	color: #428bca;
+    color: #428bca;
 }
-.breakword {  
-    word-wrap: break-word;  
+
+.breakword {
+    word-wrap: break-word;
 }
+
 blockquote {
-	padding: 10px 15px;
-	font-size: 12px;
-	margin: 0 0 5px !important;
+    padding: 10px 15px;
+    font-size: 12px;
+    margin: 0 0 5px !important;
 }
+
 h2, .h2 {
-	font-size: 30px;
+    font-size: 30px;
 }
