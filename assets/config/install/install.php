@@ -5,7 +5,7 @@ echo '
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>MapleBit Installation</title>
+<title>YakuzaMS Installation</title>
 <link href="../../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 <link href="style.css" rel="stylesheet" type="text/css" />
 <script>
@@ -17,7 +17,7 @@ function goBack() {window.history.back()}
 
 <div class="container">
 	<div class="form-install">
-    <h2 class="form-install-heading">MapleBit Installation</h2>
+    <h2 class="form-install-heading">YakuzaMS Installation</h2>
 ';
 if (isset($_GET['install'])) {
     $install = $_GET['install'];
@@ -25,14 +25,14 @@ if (isset($_GET['install'])) {
     $install = "";
 }
 if (file_exists('installdone.txt')) {
-    echo "<div class=\"alert alert-info\">Oops! Looks like MapleBit has already been installed! If you'd like, you can delete everything in the install folder, except for installdone.txt</div>";
+    echo "<div class=\"alert alert-info\">Oops! Looks like YakuzaMS has already been installed! If you'd like, you can delete everything in the install folder, except for installdone.txt</div>";
 } else {
     switch ($install) {
         case NULL:
             echo '
-				<h4>Welcome to MapleBit.</h4>
+				<h4>Welcome to YakuzaMS.</h4>
 				<hr/>
-				Before you can use your new website, MapleBit must be installed. Please make sure you have the following information handy:<br/><br/>
+				Before you can use your new website, YakuzaMS must be installed. Please make sure you have the following information handy:<br/><br/>
 				<ul>
 					<li>Database name</li>
 					<li>Database username</li>
