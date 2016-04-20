@@ -98,7 +98,8 @@ if($banner != ""){echo "<img src=\"".$banner."\" alt=\"banner\" class=\"img-resp
 </nav>
 
 <div class="well">
-<div class="row">
+<!--Opacity change for the background here, added 0.8-->
+<div class="row" style="opacity: 0.8;" >
 	<div class="col-md-3">
 		<?php include("sources/structure/sidebar.php"); ?>
 	</div>

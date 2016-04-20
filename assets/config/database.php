@@ -7,7 +7,7 @@ if(basename($_SERVER["PHP_SELF"]) == "database.php"){
 $host['hostname'] = 'localhost'; // Hostname [Usually localhost]
 $host['user'] = 'dbuser'; // Database Username [Usually root]
 $host['password'] = 'dl34od903jfDow'; // Database Password [Leave blank if unsure]
-$host['database'] = 'maple_maplelife'; // Database Name
+$host['database'] = 'yourstorydb'; // Database Name
 
 
 //Database Prefix
