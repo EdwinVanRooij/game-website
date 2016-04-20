@@ -14,8 +14,8 @@ try {
 	$servername = $prop['name'];
 	/* Site title */
 	$sitetitle = $prop['name'];
-	$pb = " (Powered by MapleBit)";
-//	$pb = "";
+//	$pb = " (Powered by MapleBit)";
+	$pb = "";
 	$siteurl = $prop['siteurl'];
 	$banner = $prop['banner'];
 	$background = $prop['background'];
@@ -44,7 +44,7 @@ try {
 	$baseflood = $prop['flood'];
 	$pcap = $prop['pcap'];
 	/* Flood Interval */
-	$basefloodint = $prop['floodint'];
+    $basefloodint = $prop['floodint'];
 	/* Level for GMs and up */
 	$gmlevel = $prop['gmlevel'];
 	/* Get Theme */
