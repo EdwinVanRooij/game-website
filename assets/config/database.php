@@ -13,6 +13,7 @@ $second_config = $ini_array['second_config'];
 //Initialize the variables
 print $db_config['host'] . "<br/>";
 print $second_config['user'];
+print 'swag';
 
 //SQL Information
 $host['hostname'] = 'localhost'; // Hostname [Usually localhost]
